@@ -1,0 +1,56 @@
+/* Sidebar Css */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+/* Sidebar Links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+/* Changes color on hover */
+.sidebar a:hover {
+    color: #ffff00;
+}
+/* Position and styling for closebtn */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Opens sidebar */
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover{
+    background-color: #444;
+}
+/* pushes page content 2 right */
+#main{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+/* Change navbar style on smaller screens */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
