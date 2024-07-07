@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #040b13;
+    padding: 0;
 }
-.flex-column{
-    display: flex;
-    flex-direction: column;
+.logo {
+    width: 50px;
+    height: 50px;
+    padding-left: 80pxsss;
 }
 /* Sidebar Css */
 .sidebar {
@@ -15,7 +18,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: black; /*for the menu that pops out*/
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -45,13 +48,15 @@
 .openbtn{
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
+    background-color: transparent;
+    color: black;
+    padding: 10px 100px;
     border: none;
+    display: flex;
+    flex-direction: column;
 }
 .openbtn:hover{
-    background-color: #444;
+    /* background-color: #444; */
 }
 /* pushes page content 2 right */
 #main{
