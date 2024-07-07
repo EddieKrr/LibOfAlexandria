@@ -68,3 +68,13 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
+/* Footer Styling */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #040b13;
+    color: white;
+    text-align: center;
+}
